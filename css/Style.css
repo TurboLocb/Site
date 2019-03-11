@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+body{
+	margin: 0;
+	padding: 0;	
+
+	font-family: 'PT Serif', sans-serif;
+	font-size: 14px;
+	color: #d5d4d4;
+
+	background-color: #c4a660;
+	background-image: url("../image/divinity-originial-sin-2-background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat-y;	
+}
+
+header{
+	/*background-color: black;*/
+	width: auto;			
+}
+
+footer{
+	font-family: 'Rubik', 'PT Serif', sans-serif;
+	width: 100%;
+	background-color:#002a32;	
+}
+
+.main-container{
+	display: flex;
+	flex-direction: column;	
+}
+
+/* Класс для задания размеров блоково на сайте */
+.container{	
+	background-color:rgba(39,30,28, 0.88); 
+
+	width: 950px;
+	margin: 0 auto;
+	padding: 0 10px;		
+}
+
+body a{
+	color: #cd853f;
+	text-decoration: none;
+}
+
+/* Ссылки при наведении */
+a:hover{
+	text-decoration: underline;
+}
+
+footer a{
+	color: #00d6d6;
+}
+
+/* Полоса под заголовком статьи */
+hr{
+	height: 1px;
+	background-color: burlywood;
+	color: burlywood;
+}
+
+/* 
+
+	Упорядочиваем header 
+
+*/
+header .container{
+	display: flex;
+	flex-direction: column;	
+	
+	width: 950px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.header-first-flex-column,
+.header-navigation{	
+	display: flex;
+	flex-direction: row;
+	align-items: center;	
+
+	width: 100%;
+}
+
+.header-navigation-list{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+		
+	height: 46px;
+	text-transform: uppercase;
+}
+
+.header-navigation-list a{
+	color: white;
+}
+
+.header-navigation-list-main,
+.header-navigation-list-main-information,
+.header-navigation-list-main-ingame-characters,
+.header-navigation-list-main-battle-system{
+	margin: 0 11px;
+}
+
+.header-logo,
+.header-h1{
+	margin: 0 10px;
+}
+/* 
+
+	Упорядочиваем центральную навигацию
+
+*/
+.body-navigation{
+	display: flex;
+	flex-direction: column;	
+}
+
+.body-navigation-first-list,
+.body-navigation-second-list{
+	display: flex;
+	flex-direction: row;	
+}
+
+/* Убираем отступы в навигации */
+.header-navigation-list,
+.body-navigation-first-list,
+.body-navigation-second-list{
+	margin: 0;
+	padding: 0;
+}
+
+/* Заголовок навигации */
+.body-navigation-h3{
+	text-align: center;
+
+	background-image: url("../image/body-navigation-background.png");
+	background-position: 0 0;
+	background-repeat: repeat-x;	
+	color: #c4a660;
+
+	margin-bottom: 0;
+	height: 32px;
+}
+
+/* Задаем размеры элемента центральной навигации */
+.body-navigation-list-quest,
+.body-navigation-list-places,
+.body-navigation-list-characters,
+.body-navigation-list-creatures,
+.body-navigation-list-items,
+.body-navigation-list-mechanics-game,
+.body-navigation-list-organizations,
+.body-navigation-list-gallery{
+	background-size: cover;
+
+	height: 130px;
+	width: 25%;	
+	margin: 1px;	
+}
+
+/* Вставляем картинки в элементы навигации */
+.body-navigation-list-quest{
+	background-image: url("../image/body-navigation/body-navigation-quests.png");
+}
+.body-navigation-list-places{
+	background-image: url("../image/body-navigation/body-navigation-places.png");
+}
+.body-navigation-list-characters{
+	background-image: url("../image/body-navigation/body-navigation-characters.png");
+}
+.body-navigation-list-creatures{
+	background-image: url("../image/body-navigation/body-navigation-creatures.png");
+}
+.body-navigation-list-items{
+	background-image: url("../image/body-navigation/body-navigation-items.png");
+}
+.body-navigation-list-mechanics-game{
+	background-image: url("../image/body-navigation/body-navigation-game-mechanics.png");
+}
+.body-navigation-list-organizations{
+	background-image: url("../image/body-navigation/body-navigation-organizations.png");
+}
+.body-navigation-list-gallery{
+	background-image: url("../image/body-navigation/body-navigation-gallery.png");
+}
+
+/* Задаем расположение элемента навигации */
+.body-navigation-list-quest,
+.body-navigation-list-places,
+.body-navigation-list-creatures,
+.body-navigation-list-characters,
+.body-navigation-list-items,
+.body-navigation-list-mechanics-game,
+.body-navigation-list-organizations,
+.body-navigation-list-gallery{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+/* Задаем цвет в название элемента навигации и его параметры */
+.body-navigation-list-div-text{	
+
+	background-color: rgba(0,0,0, 0.7);
+
+	height: 20px;
+	padding: 5px 7px;	
+}
+
+/*Убираем маркеры списков*/
+.body-navigation-first-list,
+.body-navigation-second-list,
+.header-navigation-list,
+.body-first-article-list,
+.footer-social-list,
+.footer-review-list,
+.footer-community-list,
+.footer-another-list{
+	list-style: none;		
+}
+
+/* 
+
+	Статьи перед футером 
+
+*/
+
+.container-with-articles{
+	background-color:rgba(39,30,28, 0.88); 
+
+	width: 950px;
+	margin: 0 auto;
+	padding: 0 10px;
+	padding-bottom: 30px;
+}
+
+.body-first-article-header{
+	color: rgb(7, 7, 7);
+
+	background-color: red;
+	background-image: url("../image/body-first-article.png");
+	background-repeat: no-repeat;
+}
+
+/* Тело статьи */
+.body-first-article-list{
+	margin: 0 0;
+	padding: 0;	
+}
+
+/* Нумерация списка статьи */
+.body-first-article-list-span{
+	display: flex;
+	justify-content: center;
+	flex: 0 0 24px;
+
+	font-size: 14px;
+	font-weight: bold;
+
+	color: white;
+	background-color: #999;
+
+	height: 24px;
+	width: 24px;
+
+	border-radius: 50%;
+}
+
+.body-first-article-list-span-text{
+	font-size: 12px;
+	margin-left: 12px; 
+}
+
+.body-first-article a{
+	color: rgb(7, 7, 7);
+}
+
+.body-second-article a,
+.body-third-article a{
+	color: rgb(255, 255, 255);
+}
+
+.body-first-article a:hover,
+.body-second-article a:hover,
+.body-third-article a:hover{
+	text-decoration: none;
+}
+
+.body-first-article-list-hr{
+	color: #999;
+}
+
+.body-second-article{
+	background-image: url("../image/body-second-article.jpg");
+}
+
+.body-third-article{
+	background-image: url("../image/body-third-article.jpg");
+}
+
+/* Размеры статей */
+.body-first-article,
+.body-second-article,
+.body-third-article{	
+	background-size: cover;
+	background-color: white;
+
+	height: 250px;
+	width: 100%;	
+
+	margin: 0 10px;
+
+	border: 1px solid #524b49;
+}
+.body-article-h2{
+	margin: 10px 10px;
+	padding: 0;
+}
+
+/* Порядок статей */
+.body-articles{
+	display: flex;
+	flex-direction: column;	
+
+	background-color: rgba(255,255,255,0.1);
+
+	
+
+	padding: 10px;
+}
+
+.body-articles2{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+	margin: 10px 0;
+}
+
+.body-second-article,
+.body-third-article{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.body-second-article-title,
+.body-third-article-title{
+	padding: 5px;	
+}
+
+/* Оформление первой статьи */
+.body-first-article-header{
+	font-size: 18px;
+	font-weight: bold;
+
+	color: white;
+
+	background-size: contain;
+
+	width: auto;		
+	padding: 13px;
+}
+
+.body-first-article-list{
+	display: flex;
+	flex-direction: column;		
+
+	height: 100%;
+	max-height: 200px;
+	margin: 0 18px;
+}
+
+.body-first-article-list-li-1,
+.body-first-article-list-li-2,
+.body-first-article-list-li-3{	
+	display: flex;
+	flex: 1 0 33%;
+
+	border-bottom: 1px solid #ccc;
+	height: 33%;
+}
+
+.body-first-article-list-li-3{
+	border-bottom: 0;
+}
+.body-first-article-list-li-1 a,
+.body-first-article-list-li-2 a,
+.body-first-article-list-li-3 a{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+/*
+
+	Футер
+
+*/
+
+.footer{
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 30px;
+}
+
+.footer .container{
+	background-color:#002a32;
+}
+
+.footer ul{
+	margin: 0;
+	padding: 0;
+}
+
+.footer-h2{
+	text-align: center;
+
+	margin: 40px 0 35px;
+}
+
+.footer-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly; 
+	
+
+	width: 100%;
+
+	margin-bottom: 40px;
+}
+
+.footer-community-list{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-community-list-main{
+	display: flex;
+	flex-direction: row;
+}
+.footer-social-list,
+.footer-review-list,
+.footer-community-list{
+	margin-right: 55px;
+}
+
+.footer-another-list{
+	margin-top: 30px;
+}
+
+.footer-community-list-header{	
+	color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+    min-height: 14px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.footer li{
+	color: #00d6d6;
+	margin-bottom: 8px;
+}
+
+.footer-community-list-1{
+	margin-right: 12px;
+}
+
+.footer-community-list-header-4{
+	color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+    min-height: 14px;
+    padding: 0;
+	text-transform: uppercase;
+	
+	opacity: 0;
+}
+
+/*
+
+	Значки для "В социальных сетях"
+
+*/
+
+
+
+/*
+
+	Строчка English 
+
+*/
+
+.container-language{
+	background-color:rgba(39,30,28, 0.88); 
+
+	width: 950px;
+	margin: 0 auto;
+	padding: 0 10px;
+	padding-bottom: 20px;	
+
+	text-align: end;
+}
+
+
