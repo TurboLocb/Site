@@ -491,6 +491,71 @@ header .container{
 
 */
 
+.footer-facebook,
+.footer-twitter,
+.footer-vkontakte{
+	display: block;
+}
+
+.footer-facebook:hover,
+.footer-twitter:hover,
+.footer-vkontakte:hover{
+	opacity: 1;	
+}
+
+.footer-vkontakte{
+	width: 34px;
+	height: 20px;
+	
+	background-image: url("../image/logos/vk-logo.png");			
+	background-position: 0 0;
+	opacity: 0.45;
+}
+
+.footer-facebook{
+	width: 34px;
+	height: 20px;
+	
+	background-image: url("../image/logos/facebook-logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;  		
+	background-position: 0 0;
+	opacity: 0.45;
+
+}
+
+.footer-twitter{
+
+	width: 34px;
+	height: 20px;
+	
+	background-image: url("../image/logos/twitter-logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;  		
+	background-position: 0 0;
+	opacity: 0.45;
+}
+.footer-social-list{
+	position: relative;
+}
+
+.footer-social-list-li0{
+	position: absolute;
+	left: 0px;
+	top: 38px;
+}
+
+.footer-social-list-li1{
+	position: absolute;
+	left: 45px;
+	top: 38px;
+}
+
+.footer-social-list-li2{
+	position: absolute;
+	right: 10px;
+	top: 38px;
+}
 
 
 /*
