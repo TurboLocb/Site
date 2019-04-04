@@ -763,7 +763,29 @@ header .container::before{
 
 /* Оформление figure на странице */
 
-.rivellon-information-body-first-div{
-	position: relative;
+.first-figure,
+.second-figure,
+.third-figure,
+.fourth-figure,
+.fiveth-figure,
+.sixth-figure
+{
+	float: right;
+
+	max-width: 250px;
 }
 
+.seventh-figure{
+	float: right;
+	order: -1;
+
+	max-width: 400px;
+
+	
+}
+
+figure span{
+	font-size:11px;
+	color:grey;
+	text-align: center;
+}
