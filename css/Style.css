@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+body{
+	margin: 0;
+	padding: 0;	
+
+	font-family: 'PT Serif', sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	color: #d5d4d4;
+
+	background-color: #c4a660;
+	background-image: url("../image/divinity-originial-sin-2-background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat-y;
+	background-attachment: fixed;	
+}
+
+header{
+	/*background-color: black;*/
+	width: auto;			
+}
+
+footer{
+	font-family: 'Rubik', 'PT Serif', sans-serif;
+	width: 100%;
+	background-color:#002a32;	
+}
+
+.main-container{
+	display: flex;
+	flex-direction: column;	
+}
+
+/* Класс для задания размеров блоково на сайте */
+.container{	
+	box-sizing: border-box;
+
+
+	background-color:rgba(39,30,28, 0.88); 
+
+	width: 950px;
+	margin: 0 auto;
+	padding: 0 20px;		
+}
+
+body a{
+	color: #cd853f;
+	text-decoration: none;
+}
+ 
+ /* Затемнение вкладки "Главное" */
+.index-information-a{	
+	opacity: 0.55;	
+}
+
+.index-information-a:hover,
+.index-information-a:focus{
+	text-decoration: none;
+}
+
+/* Ссылки при наведении */
+a:hover{
+	text-decoration: underline;
+}
+
+footer a{
+	color: #00d6d6;
+}
+
+/* Полоса под заголовком статьи */
+hr{
+	margin: 0;
+	margin-bottom: 8px;	
+	border: 0;
+	height: 1px;
+	background-color:#524b49;	
+}
+
+/* 
+
+	Упорядочиваем header 
+
+*/
+header .container{
+	display: flex;
+	position: relative;
+	flex-direction: row;	
+	align-items: center;
+	width: 950px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.header-first-flex-column,
+.header-navigation{	
+	display: flex;
+	flex-direction: column;			
+
+	position: relative;
+
+	width: 100%;
+
+
+}
+
+.header-first-flex-column{
+	margin-left: 11px;
+}
+
+.header-navigation-list{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+		
+	height: 46px;
+	text-transform: uppercase;
+}
+
+.header-navigation-list a{
+	color: white;
+}
+
+.header-navigation-list-main,
+.header-navigation-list-main-information,
+.header-navigation-list-main-ingame-characters,
+.header-navigation-list-main-battle-system{
+	margin: 0 11px;
+}
+
+.header-logo,
+.header-h1{
+	margin: 0 0;
+	position: relative;	
+}
+
+.header-logo{
+	margin-left: 20px;
+	margin-top: 20px;	
+	margin-bottom: 20px;	
+
+	order: -1;
+}
+
+.header-h1{
+	margin: 0 0;
+	margin-top: 25px;
+	margin-bottom: 11px;
+	margin-left: 11px;
+}
+
+/* Градиент в header */
+header .container::before{
+	content: '';
+
+	position: absolute;	
+	left: 0;
+	top: 0;
+	
+	width: 100%;
+	height: 100%;
+
+	background: linear-gradient(90deg,#51080080 55%, transparent 100%);
+}
+
+/*
+
+	Правим текст в body
+
+*/
+
+.body p{
+	margin: 14px 0px;
+}
+
+.body-first-section-h1{	
+	font-size: 36px;
+}
+
+.body-first-section-h2,
+.body-second-section-h2,
+.body-third-section-h2{
+	font-weight: normal;
+
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
+}
+
+.body-third-section-igromaia,
+.body-third-section-mail-ru,
+.body-third-section-4-pda,
+.body-third-section-fantasy-world{
+	margin-left: 24px;
+}
+
+/* 
+
+	Упорядочиваем центральную навигацию
+
+*/
+.body-navigation{
+	display: flex;
+	flex-direction: column;	
+}
+
+.body-navigation-first-list,
+.body-navigation-second-list{
+	display: flex;
+	flex-direction: row;	
+}
+
+/* Убираем отступы в навигации */
+.header-navigation-list,
+.body-navigation-first-list,
+.body-navigation-second-list{
+	margin: 0;
+	padding: 0;
+}
+
+/* Заголовок навигации */
+.body-navigation-h3{
+	text-align: center;
+
+	background-image: url("../image/body-navigation-background.png");
+	background-position: 0 0;
+	background-repeat: repeat-x;	
+	color: #c4a660;
+
+	margin-bottom: 0;
+	height: 32px;
+}
+
+/* Задаем размеры элемента центральной навигации */
+.body-navigation-list-quest,
+.body-navigation-list-places,
+.body-navigation-list-characters,
+.body-navigation-list-creatures,
+.body-navigation-list-items,
+.body-navigation-list-mechanics-game,
+.body-navigation-list-organizations,
+.body-navigation-list-gallery{
+	background-size: cover;
+
+	height: 130px;
+	width: 25%;	
+	margin: 1px;	
+}
+
+/* Вставляем картинки в элементы навигации */
+.body-navigation-list-quest{
+	background-image: url("../image/body-navigation/body-navigation-quests.png");
+}
+.body-navigation-list-places{
+	background-image: url("../image/body-navigation/body-navigation-places.png");
+}
+.body-navigation-list-characters{
+	background-image: url("../image/body-navigation/body-navigation-characters.png");
+}
+.body-navigation-list-creatures{
+	background-image: url("../image/body-navigation/body-navigation-creatures.png");
+}
+.body-navigation-list-items{
+	background-image: url("../image/body-navigation/body-navigation-items.png");
+}
+.body-navigation-list-mechanics-game{
+	background-image: url("../image/body-navigation/body-navigation-game-mechanics.png");
+}
+.body-navigation-list-organizations{
+	background-image: url("../image/body-navigation/body-navigation-organizations.png");
+}
+.body-navigation-list-gallery{
+	background-image: url("../image/body-navigation/body-navigation-gallery.png");
+}
+
+/* Задаем расположение элемента навигации */
+.body-navigation-list-quest,
+.body-navigation-list-places,
+.body-navigation-list-creatures,
+.body-navigation-list-characters,
+.body-navigation-list-items,
+.body-navigation-list-mechanics-game,
+.body-navigation-list-organizations,
+.body-navigation-list-gallery{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+/* Задаем цвет в название элемента навигации и его параметры */
+.body-navigation-list-div-text{	
+
+	background-color: rgba(0,0,0, 0.7);
+
+	height: 20px;
+	padding: 5px 7px;	
+}
+
+/*Убираем маркеры списков*/
+.body-navigation-first-list,
+.body-navigation-second-list,
+.header-navigation-list,
+.body-first-article-list,
+.footer-social-list,
+.footer-review-list,
+.footer-community-list,
+.footer-another-list{
+	list-style: none;		
+}
+
+/* 
+
+	Статьи перед футером 
+
+*/
+
+.container-with-articles{
+	box-sizing: border-box;	
+
+	background-color:rgba(39,30,28, 0.88); 
+
+	width: 950px;
+	margin: 0 auto;
+	
+}
+
+/* Градиент в заголовке статьи */
+.body-first-article-header{
+	position: relative;	
+	
+	background-image: url("../image/body-first-article.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.body-first-article-header::before{
+	content: '';
+	position: absolute;
+	display: block;
+
+	width: 100%;
+	height: 48px;
+
+	top: 0;
+	left: 0;
+
+	background: linear-gradient(90deg,#510800 60%,transparent 100%); 	
+}
+
+/* Градиенты в первой и второй статье */
+
+.body-second-article::before,
+.body-third-article::before{
+	content: "";
+
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	top: 0;
+	left: 0;
+
+	background: linear-gradient(0deg,black,transparent);
+}
+
+/* Тело статьи */
+.body-first-article-list{
+	margin: 0 0;
+	padding: 0;	
+}
+
+/* Нумерация списка статьи */
+.body-first-article-list-span{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+
+	font-size: 14px;
+	font-weight: bold;
+
+	color: white;
+	background-color: #999;
+
+	height: 24px;
+	width: 24px;
+
+	border-radius: 50%;
+}
+
+.body-first-article-list-span-text{
+	font-size: 12px;
+	margin-left: 12px; 
+}
+
+.body-first-article a{
+	color: rgb(7, 7, 7);
+}
+
+.body-second-article a,
+.body-third-article a{
+	color: rgb(255, 255, 255);
+}
+
+.body-first-article a:hover,
+.body-second-article a:hover,
+.body-third-article a:hover{
+	text-decoration: none;
+}
+
+
+.body-second-article{
+	background-image: url("../image/body-second-article.jpg");
+	background-position-x: center;
+}
+
+.body-third-article{
+	background-image: url("../image/body-third-article.jpg");
+	background-position-x: center;
+}
+
+/* Размеры статей */
+.body-first-article,
+.body-second-article,
+.body-third-article{	
+	background-size: cover;
+	background-color: white;
+
+	height: 250px;
+	width: 100%;	
+
+	margin: 0 10px;
+
+	border: 1px solid #524b49;
+}
+.body-article-h2{
+	margin: 0;
+	padding: 0;
+
+	font-size: 24px;
+	line-height: 20px; 
+
+	margin-bottom: 18px;
+	margin-left: 10px;	
+	
+}
+
+/* Порядок статей */
+.body-articles{
+	display: flex;
+	flex-direction: column;	
+
+	background-color: rgba(255,255,255,0.1);
+
+	padding: 30px;
+}
+
+.body-articles2{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+	margin: 10px 0;
+}
+
+.body-second-article,
+.body-third-article{
+	display: flex;
+	flex-direction: column-reverse;
+
+	position: relative;
+}
+
+
+/* Оформление первой статьи */
+.body-first-article-header{
+	font-size: 14px;
+	font-weight: bold;
+
+	color: white;
+
+	background-size: contain;
+
+	width: auto;		
+	padding: 13px;
+}
+
+.body-first-article-header-h4{
+	position: relative;
+
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.body-first-article-list{
+	display: flex;
+	flex-direction: column;		
+
+	height: 100%;
+	max-height: 200px;
+	margin: 0 18px;
+}
+
+.body-first-article-list-li-1,
+.body-first-article-list-li-2,
+.body-first-article-list-li-3{	
+	display: flex;
+	flex: 1 0 33%;
+
+	border-bottom: 1px solid #ccc;
+	height: 33%;
+}
+
+.body-first-article-list-li-3{
+	border-bottom: 0;
+}
+.body-first-article-list-li-1 a,
+.body-first-article-list-li-2 a,
+.body-first-article-list-li-3 a{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+/* Параметры второй и третьей статей */
+
+.body-second-article-title,
+.body-third-article-title{
+	position: relative;
+
+	color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 13px; 
+    padding-left: 18px;
+}
+
+/*
+
+	Футер
+
+*/
+
+.footer{
+	display: flex;
+	flex-direction: column;
+
+	
+
+	margin-top: 30px;
+	
+}
+
+.footer .container{
+	background-color:#002a32;
+}
+
+.footer ul{
+	margin: 0;
+	padding: 0;
+}
+
+.footer-h2{
+	text-align: center;
+
+	margin: 40px 0 35px;
+}
+
+.footer-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly; 
+	
+
+	width: 100%;
+
+	margin-bottom: 40px;
+}
+
+.footer-community-list{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-community-list-main{
+	display: flex;
+	flex-direction: row;
+}
+.footer-social-list,
+.footer-review-list,
+.footer-community-list{
+	margin-right: 55px;
+}
+
+.footer-another-list{
+	margin-top: 30px;
+}
+
+.footer-community-list-header{	
+	color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+    min-height: 14px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.footer li{
+	color: #00d6d6;
+	margin-bottom: 8px;
+}
+
+.footer-community-list-1{
+	margin-right: 12px;
+}
+
+.footer-community-list-header-4{
+	color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+    min-height: 14px;
+    padding: 0;
+	text-transform: uppercase;
+	
+	opacity: 0;
+}
+
+/*
+
+	Значки для "В социальных сетях"
+
+*/
+
+.footer-facebook,
+.footer-twitter,
+.footer-vkontakte{
+	display: block;
+}
+
+.footer-facebook:hover,
+.footer-twitter:hover,
+.footer-vkontakte:hover{
+	opacity: 1;	
+}
+
+.footer-vkontakte{
+	width: 34px;
+	height: 20px;
+	
+	background-image: url("../image/logos/vk-logo.png");			
+	background-position: 0 0;
+	opacity: 0.45;
+}
+
+.footer-facebook{
+	width: 34px;
+	height: 20px;
+	
+	background-image: url("../image/logos/facebook-logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;  		
+	background-position: 0 0;
+	opacity: 0.45;
+
+}
+
+.footer-twitter{
+
+	width: 34px;
+	height: 20px;
+	
+	background-image: url("../image/logos/twitter-logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;  		
+	background-position: 0 0;
+	opacity: 0.45;
+}
+.footer-social-list{
+	position: relative;
+}
+
+.footer-social-list-li0{
+	position: absolute;
+	left: 0px;
+	top: 38px;
+}
+
+.footer-social-list-li1{
+	position: absolute;
+	left: 45px;
+	top: 38px;
+}
+
+.footer-social-list-li2{
+	position: absolute;
+	right: 10px;
+	top: 38px;
+}
+
+
+/*
+
+	Строчка English 
+
+*/
+
+.container-language{
+	box-sizing: border-box;
+
+	background-color:rgba(39,30,28, 0.88); 
+
+	width: 950px;
+	margin: 0 auto;
+	padding: 0 20px;
+	padding-bottom: 20px;	
+
+	text-align: end;
+}
+
+/* 
+
+	Селекторы для второй страницы ("Основная информация")
+
+*/
+
+.rivellon-first-h1{
+	font-size: 36px;
+}
+
+.rivellon-information-body h2,
+.rivellon-information-body h3{
+	font-weight: 400;
+}
+
+.rivellon-information-body h2{
+	font-size: 20px;
+}
+
+.rivellon-information-body h3{
+	font-size: 17px;
+}
+
+/* Параметры ссылки Ривеллон в хедере страницы */
+.rivellon-information-body .rivellon-information-a{	
+	opacity: 0.55;
+}
+
+.rivellon-information-body .rivellon-information-a:hover,
+.rivellon-information-body .rivellon-information-a:focus{
+	text-decoration: none;
+}
+
+.rivellon-information-body h1{	
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Оформление figure на странице */
+
+.first-figure,
+.second-figure,
+.third-figure,
+.fourth-figure,
+.fiveth-figure,
+.sixth-figure
+{
+	float: right;
+
+	max-width: 250px;
+}
+
+.seventh-figure{
+	float: right;
+	order: -1;
+
+	max-width: 400px;
+
+	
+}
+
+figure span{
+	font-size:11px;
+	color:grey;
+	text-align: center;
+}
