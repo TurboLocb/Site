@@ -29,10 +29,6 @@ footer{
 	background-color:#002a32;	
 }
 
-.login-section{
-	font-family: 'Rubik', 'Helvatica Neue', 'PT Serif', sans-serif;	
-}
-
 .main-container{
 	display: flex;
 	flex-direction: column;	
@@ -132,12 +128,6 @@ header .container{
 .header-navigation-list-main-ingame-characters,
 .header-navigation-list-main-battle-system{
 	margin: 0 11px;
-}
-
-/* Для кнопки "Вход" */
-.header-navigation-list-enter{
-	margin: 0px 11px;
-    margin-left: auto;
 }
 
 .header-logo,
@@ -713,178 +703,6 @@ header .container::before{
 	top: 38px;
 }
 
-/* 
-
-	Блок авторизации
-
-*/
-
-
-.login-section{	
-
-	position: fixed;
-
-	box-sizing: border-box;
-
-	background: #fff;
-	
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-sizing: border-box;
-
-	top: 50%;
-	left: 50%;
-	
-	margin-left: -225px;
-	margin-top: -125px;
-
-	width: 450px;
-	height: 250px;
-
-	padding: 0 20px;
-	
-	display: none;
-}
-
-
-
-.login-section-h{
-	color: black;
-	text-align: center;
-	font-size: 16px;
-	margin: 10px 0px;
-}
-
- /* Кнопка "закрыть" */
-.login-close{
-	position: absolute;
-
-	background-color: transparent;
-
-	font-size: 0;
-
-	width: 22px;
-	height: 22px;
-
-	top: 0;
-	right: -30px;
-
-	border: 0;
-}
-
-.login-close::before,
-.login-close::after{
-	content: "";
-
-	position: absolute;
-	cursor: pointer;
-
-	width: 20px;
-	height: 3px;
-
-	right: 0;
-	top: 5px;
-
-	background: white;
-}
-
-.login-close::before{
-	transform: rotate(-45deg);
-}
-
-.login-close::after{
-	transform: rotate(45deg);
-}
-
-.login-close:active,
-.login-close:focus{	
-	outline: none;
-	border: 0;
-}
-
-.login-form p{
-	width: 100%;
-	text-align: center;
-	margin: 10px 0px;
-}
-
-.login-form input[type="text"],
-.login-form input[type="password"]{
-	font-family: inherit;
-	box-sizing: border-box;
-	
-    width: 300px;
-	height: auto;
-	
-    border: 0;
-    border-bottom: 2px;
-	border-style: inset;
-	
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-left: 5px;	
-}
-
-.login-form input[type="text"]:active,
-.login-form input[type="password"]:active,
-.login-form input[type="text"]:focus,
-.login-form input[type="password"]:focus{
-	outline: 0;
-	outline-color: transparent;	
-}
-
-.login-enter{
-	display: inline-block;
-
-	width: 300px;
-	
-	margin: 0px auto;
-	margin-top: 22px;
-	padding: 7px 0;
-	
-    font-family: inherit;
-    color: white;
-	font-weight: 500;
-	
-    background-color: #00acac;
-    border: 0;
-}
-
-.login-enter:focus{
-	outline: 0;
-}
-
-/* Иконка для поля пароля */
-.password-span{
-	position: absolute;
-
-	background: url("../image/another/login-form-icon-password.svg");
-	
-	
-    height: 20px;
-	width: 20px;
-	
-	right: 77px;
-    bottom: 100px;
-	
-	transform: scaleX(-1);
-}
-
-/* Иконка для поля логина */
-.login-span{
-	position: absolute;
-
-	background: url("../image/another/login-form-icon-login.svg");	
-	background-repeat: no-repeat;
-
-    height: 20px;
-	width: 20px;	
-	
-	right: 77px;
-    bottom: 140px;  
-}
-
 
 /*
 
@@ -913,7 +731,6 @@ header .container::before{
 
 .rivellon-first-h1{
 	font-size: 36px;
-	margin-bottom: 12px;
 }
 
 .rivellon-information-body h2,
@@ -944,11 +761,6 @@ header .container::before{
     line-height: 1;
 }
 
-/* Отступы заголовков подчеркнутых линией */
-.rivellon-h2{
-	margin-bottom: 4px;
-}
-
 /* Оформление figure на странице */
 
 .first-figure,
@@ -964,28 +776,16 @@ header .container::before{
 }
 
 .seventh-figure{
-	float: right;	
+	float: right;
+	order: -1;
+
+	max-width: 400px;
+
 	
-	max-width: 400px;	
 }
 
 figure span{
-	display: block;
-
 	font-size:11px;
 	color:grey;
-	
-	width: 100%;
 	text-align: center;
-}
-
-.seventh-figure-span{
-	font-size:11px;
-	color:grey;
-	text-align: left;
-}
-
-/* Поменяем значки элементов списка перед статьями */
-.rivellon-information-body-ul{
-	list-style: square;
 }
