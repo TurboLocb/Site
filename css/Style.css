@@ -301,7 +301,7 @@ header .container::before{
 /* Задаем цвет в название элемента навигации и его параметры */
 .body-navigation-list-div-text{	
 
-	background-color: rgba(0,0,0, 0.7);
+	background-color: rgba(0,0,0,0.7);
 
 	height: 20px;
 	padding: 5px 7px;	
@@ -719,18 +719,29 @@ header .container::before{
 
 */
 
+.main-section{
+	display: none;
+
+	position: fixed;
+
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 .login-section{	
 
 	position: fixed;
+	z-index: 1;
 
 	box-sizing: border-box;
 
-	background: #fff;
-	
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
+	background: #fff;	
+    
     box-sizing: border-box;
 
 	top: 50%;
@@ -744,16 +755,14 @@ header .container::before{
 
 	padding: 0 20px;
 	
-	display: none;
+	box-shadow: 0 0 50px rgb(255, 255, 255, 0.3);	
 }
-
 
 
 .login-section-h{
 	color: black;
 	text-align: center;
-	font-size: 16px;
-	margin: 10px 0px;
+	font-size: 16px;	
 }
 
  /* Кнопка "закрыть" */
@@ -776,6 +785,7 @@ header .container::before{
 .login-close::before,
 .login-close::after{
 	content: "";
+	z-index: 0;
 
 	position: absolute;
 	cursor: pointer;
@@ -839,7 +849,7 @@ header .container::before{
 
 	width: 300px;
 	
-	margin: 0px auto;
+	margin-left: 55px;
 	margin-top: 22px;
 	padding: 7px 0;
 	
@@ -866,7 +876,7 @@ header .container::before{
 	width: 20px;
 	
 	right: 77px;
-    bottom: 100px;
+    bottom: 112px;
 	
 	transform: scaleX(-1);
 }
@@ -882,7 +892,7 @@ header .container::before{
 	width: 20px;	
 	
 	right: 77px;
-    bottom: 140px;  
+    bottom: 150px;  
 }
 
 
