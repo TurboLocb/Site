@@ -895,6 +895,11 @@ header .container::before{
     bottom: 150px;  
 }
 
+/* Селектор для показа popup'ов */
+.popup-show{
+	display: block;
+}
+
 
 /*
 
