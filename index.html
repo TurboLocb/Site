@@ -321,22 +321,25 @@
 <section class="main-section">
 <section class="login-section">  
   <h5 class="login-section-h">Войти с помощью имени участника</h5>
-  <form class="login-form">
+  <form class="login-form" method="POST">
     <p>
       <input class="login-input" id="user-login" type="text" name="login" placeholder="Логин">
+      
       <span class="login-span"></span>    
     </p>
     <p>
      <input class="password-input" id="user-password" type="password" name="password" placeholder="Пароль">
      <span class="password-span"></span>       
-    </p>    
+    </p>
+    <button class="login-enter" type="submit">Войти</button>    
   </form>
   <button class="login-close">Закрыть</button>
-  <button class="login-enter">Войти</button>
+  
 </section>
 </section>
 
 <script type="text/javascript" src="hello.js"></script>
 <script type="text/javascript" src="login.js"></script>
+<script type="text/javascript" src="localGet.js"></script>
 </body>
 </html>

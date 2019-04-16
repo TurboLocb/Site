@@ -819,8 +819,8 @@ header .container::before{
 	margin: 10px 0px;
 }
 
-.login-form input[type="text"],
-.login-form input[type="password"]{
+.login-input,
+.password-input{
 	font-family: inherit;
 	box-sizing: border-box;
 	
@@ -834,6 +834,13 @@ header .container::before{
     padding-top: 10px;
     padding-right: 30px;
     padding-left: 5px;	
+}
+
+.login-input{
+	background: url("../image/another/login-form-icon-login.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 20px;
 }
 
 .login-form input[type="text"]:active,
@@ -861,9 +868,9 @@ header .container::before{
     border: 0;
 }
 
-.login-enter:focus{
+/* .login-enter:focus{
 	outline: 0;
-}
+} */
 
 /* Иконка для поля пароля */
 .password-span{
@@ -882,7 +889,7 @@ header .container::before{
 }
 
 /* Иконка для поля логина */
-.login-span{
+/* .login-span{
 	position: absolute;
 
 	background: url("../image/another/login-form-icon-login.svg");	
@@ -893,7 +900,7 @@ header .container::before{
 	
 	right: 77px;
     bottom: 150px;  
-}
+} */
 
 /* Селектор для показа popup'ов */
 .popup-show{
