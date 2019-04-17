@@ -11,11 +11,11 @@ function loginAndPassword() {
     popup.addEventListener("submit", function (evt) {
         if(login.value || password.value){
             evt.preventDefault();
-            localStorage.setItem("login", login.value);            
+            /* localStorage.setItem("login", login.value);   */          
             localStorage.setItem("password", password.value);            
         }else{
             evt.preventDefault();
-            console.log("Какое поле ввода пусто или пустые оба");
+            /* console.log("Какое поле ввода пусто или пустые оба"); */
         }
     });
 }
@@ -36,14 +36,14 @@ function storageLinkLoad(){
     evt.preventDefault();
     login.focus();    
 
-    if(storageLogin){            
+    /* if(storageLogin){            
         console.log("Подтяним логин из storage: " 
         + storageLogin);
         login.value = storageLogin;
     }else{
         evt.preventDefault();
         console.log("Storage пуст " + storageLogin);
-    }
+    } */
 });
 }
     

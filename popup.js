@@ -5,8 +5,7 @@ function loginEnter() {
     Задаем хипстерское название переменной для всплывающих элементов,
     в нашем случае - формы логина
     */
-    var popup = loginForm;
-    console.log("Линк логина найден: " + loginFormLink);
+    var popup = loginForm;    
     loginFormLink.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("popup-show");
@@ -19,9 +18,8 @@ function loginClose() {
     Задаем хипстерское название переменной для всплывающих элементов,
     в нашем случае - формы логина
     */
-    var popup = loginForm;
+    var popup = loginForm;  
     
-    console.log("Кнопка закрытия логина найдена: " + loginFormCloseButton);
     loginFormCloseButton.addEventListener("click", function () {
         /* evt.preventDefault(); */
         popup.classList.remove("popup-show");
