@@ -1,14 +1,18 @@
 function loginEnter() {
     var loginFormLink = document.querySelector(".header-navigation-list-enter-a");
     var loginForm = document.querySelector(".main-section");
+    var loginSection = document.querySelector(".login-section");
     /*
-    Задаем хипстерское название переменной для всплывающих элементов,
+    Задаем хипстерские название переменным для всплывающих элементов,
     в нашем случае - формы логина
     */
-    var popup = loginForm;    
+    var popup = loginForm;
+    var popup2 = loginSection;
+        
     loginFormLink.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("popup-show");
+        popup2.classList.add("popup-animation");
     });
 }
 function loginClose() {

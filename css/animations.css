@@ -1,0 +1,14 @@
+@keyframes slide{
+    0%{
+        transform: translateX(8000px);
+    }
+    50%{
+        transform: translateX(-20px);
+    }
+    75%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
